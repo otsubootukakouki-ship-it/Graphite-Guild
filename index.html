@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Graphite Guild</title>
-  <style>
+<style>
     body {
-      background-color: #000000;
-      color: #e0e0e0;
+      background-color: #ffffff;
+      color: #111111;
       font-family: "Courier New", Courier, monospace;
       padding: 40px 20px;
       max-width: 680px;
@@ -17,16 +11,16 @@
     h1 {
       font-size: 1.4rem;
       letter-spacing: 2px;
-      color: #ffffff;
+      color: #000000;
       margin-bottom: 8px;
     }
     .status {
       font-size: 0.85rem;
-      color: #888888;
+      color: #666666;
       margin-bottom: 24px;
     }
     nav a {
-      color: #ffffff;
+      color: #000000;
       text-decoration: none;
       margin-right: 8px;
     }
@@ -35,49 +29,19 @@
     }
     hr {
       border: 0;
-      border-top: 1px dashed #333333;
+      border-top: 1px dashed #cccccc;
       margin: 24px 0;
     }
     .log-entry {
       margin-bottom: 30px;
     }
     .log-date {
-      color: #777777;
+      color: #666666;
       font-size: 0.85rem;
     }
     img {
       max-width: 100%;
-      border: 1px solid #222222;
+      border: 1px solid #dddddd;
       margin: 12px 0;
     }
   </style>
-</head>
-<body>
-  <h1>「GRAPHITE GUILD」</h1>
-  <div class="status" id="clock">TIME: LOADING...</div>
-
-  <nav>
-    <a href="#overview">overview</a> // 
-    <a href="#logs">build logs</a> // 
-    <a href="#specs">specs</a>
-  </nav>
-
-  <hr />
-
-  <section id="logs">
-    <div class="log-entry">
-      <div class="log-date">[2026-11-08] - ENTRY 01: PROJECT KICKOFF</div>
-      <p>Initiating CAD modeling and mechanism prototyping for the mechanical pencil.</p>
-    </div>
-  </section>
-
-  <script>
-    function updateClock() {
-      const now = new Date();
-      document.getElementById('clock').innerText = 'LOCAL TIME - ' + now.toLocaleTimeString();
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-  </script>
-</body>
-</html>
