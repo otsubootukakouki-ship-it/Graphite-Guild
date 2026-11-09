@@ -9,86 +9,64 @@
       background-color: #000000;
       color: #e0e0e0;
       font-family: "Courier New", Courier, monospace;
-      padding: 40px 20px;
-      max-width: 680px;
+      padding: 60px 20px;
+      max-width: 720px;
       margin: 0 auto;
       line-height: 1.6;
+      text-align: center;
     }
     h1 {
-      font-size: 1.4rem;
-      letter-spacing: 2px;
+      font-size: 2.2rem;
+      letter-spacing: 3px;
       color: #ffffff;
-      margin-bottom: 8px;
-    }
-    .status {
-      font-size: 0.85rem;
-      color: #888888;
-      margin-bottom: 16px;
+      margin: 0 0 28px 0;
+      font-weight: 700;
     }
     .banner-container {
-      text-align: center;
-      margin: 20px 0 28px 0;
+      margin: 0 auto 28px auto;
+      max-width: 520px;
     }
     .banner-img {
       width: 100%;
-      max-width: 550px;
       height: auto;
       display: block;
       margin: 0 auto;
       border: none;
     }
+    .status {
+      font-size: 1.05rem;
+      color: #aaaaaa;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
     nav {
-      margin-bottom: 10px;
+      font-size: 1.05rem;
+      word-spacing: 2px;
     }
     nav a {
       color: #ffffff;
       text-decoration: none;
-      margin-right: 8px;
+      margin: 0 6px;
     }
     nav a:hover {
       text-decoration: underline;
-    }
-    hr {
-      border: 0;
-      border-top: 1px dashed #333333;
-      margin: 24px 0;
-    }
-    .log-entry {
-      margin-bottom: 30px;
-    }
-    .log-date {
-      color: #777777;
-      font-size: 0.85rem;
-    }
-    img {
-      max-width: 100%;
-      border: 1px solid #222222;
-      margin: 12px 0;
     }
   </style>
 </head>
 <body>
   <h1>「STUDIO SEATHWAITE」</h1>
-  <div class="status" id="clock">TIME: LOADING...</div>
 
   <div class="banner-container">
     <img src="studio_seathwaite_banner_dark.png" alt="Studio Seathwaite Banner" class="banner-img" />
   </div>
 
+  <div class="status" id="clock">TIME IN SAN PEDRO GARZA GARCÍA, MEXICO - LOADING...</div>
+
   <nav>
-    <a href="#overview">overview</a> // 
-    <a href="#logs">build logs</a> // 
-    <a href="#specs">specs</a>
+    <a href="about.html">about</a> // 
+    <a href="logs.html">build logs</a> // 
+    <a href="specs.html">specs</a>
   </nav>
-
-  <hr />
-
-  <section id="logs">
-    <div class="log-entry">
-      <div class="log-date">[2026-11-08] - ENTRY 01: PROJECT KICKOFF</div>
-      <p>Initiating CAD modeling and mechanism prototyping for the mechanical pencil.</p>
-    </div>
-  </section>
 
   <script>
     function updateClock() {
