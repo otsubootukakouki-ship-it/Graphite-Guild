@@ -5,26 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio Seathwaite</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
       background-color: #000000;
       color: #e0e0e0;
       font-family: "Courier New", Courier, monospace;
-      padding: 60px 20px;
-      max-width: 720px;
-      margin: 0 auto;
-      line-height: 1.6;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
       text-align: center;
+      line-height: 1.6;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1 {
       font-size: 2.2rem;
       letter-spacing: 3px;
       color: #ffffff;
-      margin: 0 0 28px 0;
+      margin-bottom: 24px;
       font-weight: 700;
     }
     .banner-container {
-      margin: 0 auto 28px auto;
-      max-width: 520px;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 500px;
     }
     .banner-img {
       width: 100%;
@@ -34,10 +53,10 @@
       border: none;
     }
     .status {
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       color: #aaaaaa;
       letter-spacing: 0.5px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
     nav {
       font-size: 1.05rem;
@@ -54,19 +73,21 @@
   </style>
 </head>
 <body>
-  <h1>「STUDIO SEATHWAITE」</h1>
+  <main class="wrapper">
+    <h1>「STUDIO SEATHWAITE」</h1>
 
-  <div class="banner-container">
-    <img src="studio_seathwaite_banner_dark.png" alt="Studio Seathwaite Banner" class="banner-img" />
-  </div>
+    <div class="banner-container">
+      <img src="studio_seathwaite_banner_dark.png" alt="Studio Seathwaite Banner" class="banner-img" />
+    </div>
 
-  <div class="status" id="clock">TIME IN SAN PEDRO GARZA GARCÍA, MEXICO - LOADING...</div>
+    <div class="status" id="clock">TIME IN SAN PEDRO GARZA GARCÍA, MEXICO - LOADING...</div>
 
-  <nav>
-    <a href="about.html">about</a> // 
-    <a href="logs.html">build logs</a> // 
-    <a href="specs.html">specs</a>
-  </nav>
+    <nav>
+      <a href="about.html">about</a> // 
+      <a href="logs.html">build logs</a> // 
+      <a href="specs.html">specs</a>
+    </nav>
+  </main>
 
   <script>
     function updateClock() {
